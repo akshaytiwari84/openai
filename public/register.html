@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title align="center">Registration Form</title>
+	<style type="text/css">
+		body {
+            background-color: #131311;
+            border-color: rgb(12, 12, 12);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            align-items: center;
+			
+
+        }
+        form {
+			background-color: #fff;
+			padding: 100px;
+			border-radius: 5px;
+			box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+			width: 300px;
+			margin: 0 auto;
+			margin-top: 50px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			
+        }
+        label {
+			display: inline-block;
+			width: 150px;
+			text-align: right;
+			margin-right: 10px;
+		}
+		input[type="text"],
+		input[type="email"],
+		input[type="password"],
+		select {
+			width: 200px;
+			padding: 5px;
+			margin-bottom: 10px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			font-size: 16px;
+		}
+		input[type="submit"] {
+			background-color: #0d0e0d;
+			color: white;
+			border: none;
+			padding: 10px;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+		}
+	</style>
+</head>
+<body >
+	<h2>Registration Form</h2>
+	<form action="#" method="post">
+		<h1>Registration:</h1>
+		<label for="full_name">Full Name:</label><input type="text" id="full_name" name="full_name" required><br>
+
+		<label for="email">Email Address:</label>
+		<input type="email" id="email" name="email" required><br>
+
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required><br>
+
+		<label for="confirm_password">Confirm Password:</label>
+		<input type="password" id="confirm_password" name="confirm_password" required><br>
+
+		<label for="date_of_birth">Date of Birth:</label>
+		<input type="date" id="date_of_birth" name="date_of_birth" required><br>
+
+		<label for="gender">Gender:</label>
+		<select id="gender" name="gender" required>
+			<option value="">--Select Gender--</option>
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+			<option value="other">Other</option>
+		</select><br>
+
+		<label for="country">Country:</label>
+		<input type="text" id="country" name="country" required><br>
+
+		<label for="phone_number">Phone Number:</label>
+		<input type="tel" id="phone_number" name="phone_number" required><br>
+
+		<input type="checkbox" id="terms_conditions" name="terms_conditions" required>
+		<label for="terms_conditions">I have read and agree to the Terms and Conditions.</label><br>
+
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
